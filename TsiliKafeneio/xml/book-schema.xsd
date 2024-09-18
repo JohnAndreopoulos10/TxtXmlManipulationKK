@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="Chapter" type="xs:string"/>
+      <xs:element name="Statistics" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="Paragraph" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="Line" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="ParagraphCount" type="xs:int"/>
+      <xs:element name="LineCount" type="xs:int"/>
+      <xs:element name="WordCount" type="xs:int"/>
+      <xs:element name="DistinctWordCount" type="xs:int"/>
+      <xs:element name="ChapterCount" type="xs:int"/>
+      <xs:element name="CreationTime" type="xs:dateTime"/>
+      <xs:element name="AuthorName" type="xs:string"/>
+      <xs:element name="ApplicationClassName" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
